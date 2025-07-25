@@ -17,7 +17,7 @@ A computer vision-based comic reader that enables hands-free scrolling using rea
 
 ## 🚀 Demo
 
-> ✨ Download the `.exe` file from [Releases](https://github.com/Subiksha-Anand/Smart_comic_scroller/releases) and try the app without installing Python or dependencies!
+> ✨ Download the `.exe` file from [Releases] (https://github.com/Subiksha-Anand/Smart_comic_scroller/blob/main/dist/test.exe) and try the app without installing Python or dependencies!
 
 https://user-images.githubusercontent.com/yourusername/demo-preview.gif
 
