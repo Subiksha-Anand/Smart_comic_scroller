@@ -1,66 +1,136 @@
-# 🖐️ Hands-Free Comic Reader using Eye Blink Detection 👁️
+```markdown
+# 📖 Smart Comic Scroller - Hands-Free Comic Reader
 
-A computer vision-based comic reader that enables hands-free scrolling using real-time **eye blink detection**. Designed for accessibility, convenience, and innovation, this app is ideal for comic book lovers, readers with disabilities, and anyone who wants a futuristic reading experience.
-
----
-
-## 📌 Features
-
-- 👀 **Blink-Based Scrolling**: Scroll through comic pages by blinking your eyes.
-- 📂 **Drag & Drop Interface**: Simply drag a folder of images (comic pages) into the app.
-- 🧠 **AI-Powered Eye Detection**: Utilizes MediaPipe and OpenCV for real-time facial landmark tracking.
-- 🖥️ **Desktop App (.exe)**: Packaged as a standalone executable with GUI.
-- 🛠️ **User-Friendly GUI**: Intuitive interface built with `Tkinter`.
-- 🔒 **Privacy Friendly**: All processing happens locally; no webcam data is stored or sent.
-
----
-
-## 🚀 Demo
-
-> ✨ Download the `.exe` file from [Releases] (https://github.com/Subiksha-Anand/Smart_comic_scroller/blob/main/dist/test.exe) and try the app without installing Python or dependencies!
+Welcome to the **Smart Comic Scroller**, a voice-enabled comic book reader that allows you to enjoy comics without lifting a finger. This project combines **OpenCV**, **pyttsx3**, and **keyboard automation** to provide a **hands-free experience** while reading comic pages.
 
 
 
 ---
 
-## 🏗️ How It Works
+## 🚀 Features
 
-1. **Facial Landmark Detection**: Uses MediaPipe’s `FaceMesh` to detect eye landmarks.
-2. **Blink Detection Logic**:
-   - Calculates Eye Aspect Ratio (EAR) to detect a blink.
-   - A blink triggers scroll-down.
-3. **Image Viewer**:
-   - Loads comic pages from a folder.
-   - Displays them one-by-one in a scrollable canvas.
-4. **Threading**: Ensures camera feed and UI remain responsive in parallel.
+- ✅ Hands-free comic page navigation
+- 🗣️ Voice feedback using `pyttsx3`
+- ⏭️ Auto-scrolls or changes pages at your voice command or key triggers
+- 🖼️ Supports image-based comic reading (JPG, PNG)
+- 🪄 Clean, minimal interface for immersive comic viewing
+- 💾 Comes with a Windows EXE file — no need to install Python!
 
 ---
 
-## 🧪 Tech Stack
+## 🖼️ How It Works
 
-| Component            | Library/Tool         |
-|---------------------|----------------------|
-| GUI                 | Tkinter              |
-| Eye Detection       | MediaPipe, OpenCV    |
-| Image Processing    | PIL (Pillow)         |
-| Packaging           | PyInstaller          |
-| Threading           | Python `threading`   |
-| Git LFS             | For uploading `.exe` |
+The script loads all the image files (comic pages) from a specified folder and displays them one by one. You can control the scrolling using:
+
+- Predefined keys (like `n` for next, `q` for quit)
+- Voice commands (future enhancement)
+- Optional timer-based automatic scroll (if integrated)
+
+---
+## 🎯 Key Features
+
+- ✋ **Hand Gesture Control**  
+  - 👋 Palm: Scroll up/down based on hand position  
+  - 👍 Thumbs Up: Go to next chapter  
+  - 👎 Thumbs Down: Go to previous chapter  
+  - 🤟 Rock Sign: Toggle between Gesture and Voice Mode  
+
+- 🎙️ **Voice Command Control** (when in Voice Mode)  
+  - “Scroll down”, “Scroll up”, “Stop scrolling”  
+  - “Next chapter”, “Previous chapter”
+
+## 📁 Folder Structure
+
+```
+
+Hands\_free\_comic\_reader/
+│
+├── comic\_reader.py        # Main script
+├── requirements.txt       # Python dependencies
+├── README.md              # This file
+├── dist/
+│   └── SmartComicReader.exe   # Compiled EXE (Windows)
+└── comic\_pages/
+├── page1.jpg
+├── page2.jpg
+└── ...
+
+````
 
 ---
 
-## 📸 Screenshots
+## 💻 How to Run (Python Users)
 
-| 👁️ Blink Detection | 🗂️ Folder Upload |
-|---------------------|------------------|
-| ![blink](screenshots/blink.png) | ![folder](screenshots/folder_upload.png) |
+### 🔧 Requirements
 
----
-
-## 🛠️ Installation (For Developers)
+Install required libraries:
 
 ```bash
-git clone https://github.com/Subiksha-Anand/Smart_comic_scroller.git
-cd Smart_comic_scroller
 pip install -r requirements.txt
-python main.py
+````
+
+### ▶️ Run the script
+
+```bash
+python comic_reader.py
+```
+
+Make sure to update the path in the script to the folder containing your comic images.
+
+---
+
+## 🧊 EXE Version for Windows
+
+🎉 You can use the **ready-to-run `.exe` file** without installing Python or any packages!
+
+### 📦 Download the EXE
+
+> 👉 [Download SmartComicReader.exe from the `dist` folder](https://github.com/Subiksha-Anand/Smart_comic_scroller/tree/master/dist)
+
+Steps:
+
+1. Download the `.exe` file.
+2. Double-click to launch the comic reader.
+3. Make sure you have some images in the specified folder.
+
+**Note**: If Windows SmartScreen gives a warning:
+
+* Click **More info → Run anyway**
+
+---
+
+
+
+## 🧰 Built With
+
+* Python 🐍
+* OpenCV (`cv2`) 📷
+* `pyttsx3` 🔊
+* `keyboard` ⌨️
+* Git LFS (for hosting large EXE files) 🪪
+
+---
+
+## 🌐 Repository Info
+
+* Source Code: [main branch](https://github.com/Subiksha-Anand/Smart_comic_scroller/tree/main)
+* EXE File: [master branch > dist/](https://github.com/Subiksha-Anand/Smart_comic_scroller/tree/master/dist)
+
+---
+
+## ✨ Credits
+
+This project was ideated and built as part of a creative AI internship experience. Huge thanks to  CHATGPT for guidance and debugging wisdom 👴🔥
+
+---
+
+## 📬 Contact
+
+If you liked this project or want to collaborate:
+
+* 📧 [Subiksha Anand](mailto:subikshamatcs@gmail.com)
+* 🔗 [GitHub: @Subiksha-Anand](https://github.com/Subiksha-Anand)
+
+---
+
+
