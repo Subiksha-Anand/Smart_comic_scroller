@@ -1,11 +1,7 @@
-```
 # 📖 Smart Comic Scroller - Hands-Free Comic Reader
 
 Welcome to the **Smart Comic Scroller**, a voice-enabled comic book reader that allows you to enjoy comics without lifting a finger. This project combines **OpenCV**, **pyttsx3**, and **keyboard automation** to provide a **hands-free experience** while reading comic pages.
 
-
-
----
 
 ## 🚀 Features
 
